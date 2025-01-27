@@ -22,7 +22,7 @@ All nodes can render themselves into a string representation that forms part of 
 
 #### Element Nodes
 
-- Created using functions or constructors named after HTML elements.
+- Created using functions or constructors named from HTML elements.
 - Accept a variable list of attributes and child nodes.
 
 **Syntax Example:**
@@ -33,7 +33,7 @@ Element(attributes..., children...) -> ElementNode
 
 #### Attribute Nodes
 
-- Created using functions or constructors named after HTML attributes.
+- Created using functions or constructors named from HTML attributes.
 - Accept a value parameter.
 
 **Syntax Example:**
@@ -54,7 +54,7 @@ Text(content) -> TextNode
 
 ### Rendering
 
-- When possible each node has a `render` that produces its string representation.
+- When possible each node has a `render` method that produces its string representation.
 - Rendering is recursive: element nodes render their attributes and children.
 
 ## Usage Example
@@ -92,7 +92,7 @@ output = avatar.render()
 </div>
 ```
 
-## Advantages of the Simplified Approach
+## Advantages of this approach
 
 - **Simplicity**: Fewer classes and interfaces make it easier to understand and implement.
 - **Language-Agnostic**: The design can be implemented in any programming language.

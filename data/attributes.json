@@ -1,30 +1,37 @@
 [
   {
     "name": "abbr",
+    "isBoolean": false,
     "description": "Specifies an abbreviated version of the content in a header cell."
   },
   {
     "name": "accept",
+    "isBoolean": false,
     "description": "Specifies the types of files that the server accepts (only for input type='file')."
   },
   {
     "name": "accept-charset",
+    "isBoolean": false,
     "description": "Specifies the character encodings to be used for form submission."
   },
   {
     "name": "accesskey",
+    "isBoolean": false,
     "description": "Specifies a shortcut key to activate/focus an element."
   },
   {
     "name": "action",
+    "isBoolean": false,
     "description": "Specifies where to send the form-data when a form is submitted."
   },
   {
     "name": "align",
+    "isBoolean": false,
     "description": "Specifies the alignment of the element's content."
   },
   {
     "name": "allow",
+    "isBoolean": false,
     "description": "Specifies a feature policy for the iframe."
   },
   {
@@ -34,18 +41,22 @@
   },
   {
     "name": "alt",
+    "isBoolean": false,
     "description": "Provides alternative text for an image if it cannot be displayed."
   },
   {
     "name": "archive",
+    "isBoolean": false,
     "description": "Specifies a space-separated list of archives for an object (deprecated)."
   },
   {
     "name": "aria-*",
+    "isBoolean": false,
     "description": "Defines accessibility semantics or ARIA properties."
   },
   {
     "name": "as",
+    "isBoolean": false,
     "description": "Specifies the type of content being preloaded (for link rel='preload')."
   },
   {
@@ -55,14 +66,17 @@
   },
   {
     "name": "autocapitalize",
+    "isBoolean": false,
     "description": "Controls how text input is automatically capitalized."
   },
   {
     "name": "autocomplete",
+    "isBoolean": false,
     "description": "Specifies whether an input field should have autocomplete enabled."
   },
   {
     "name": "autocorrect",
+    "isBoolean": false,
     "description": "Controls whether automatic spelling correction is enabled for a form field."
   },
   {
@@ -77,58 +91,72 @@
   },
   {
     "name": "autosave",
+    "isBoolean": false,
     "description": "Specifies that an input should be pre-filled with previous values (deprecated)."
   },
   {
     "name": "axis",
+    "isBoolean": false,
     "description": "Specifies a category name for a table cell (deprecated)."
   },
   {
     "name": "background",
+    "isBoolean": false,
     "description": "Specifies a background image for the element."
   },
   {
     "name": "bgcolor",
+    "isBoolean": false,
     "description": "Specifies the background color of an element."
   },
   {
     "name": "blocking",
+    "isBoolean": false,
     "description": "Specifies that a script or stylesheet blocks rendering while loading."
   },
   {
     "name": "border",
+    "isBoolean": false,
     "description": "Specifies the border width."
   },
   {
     "name": "buffered",
+    "isBoolean": false,
     "description": "Contains the time ranges that the media element has buffered."
   },
   {
     "name": "capture",
+    "isBoolean": false,
     "description": "Specifies that the camera should be used for input."
   },
   {
     "name": "cellpadding",
+    "isBoolean": false,
     "description": "Specifies the space between cell walls and cell content (deprecated)."
   },
   {
     "name": "cellspacing",
+    "isBoolean": false,
     "description": "Specifies the space between cells (deprecated)."
   },
   {
     "name": "challenge",
+    "isBoolean": false,
     "description": "Specifies that the value of the keygen element should be challenged when submitted."
   },
   {
     "name": "char",
+    "isBoolean": false,
     "description": "Aligns table content relative to a character (deprecated)."
   },
   {
     "name": "charoff",
+    "isBoolean": false,
     "description": "Specifies the offset for the char attribute (deprecated)."
   },
   {
     "name": "charset",
+    "isBoolean": false,
     "description": "Specifies the character encoding."
   },
   {
@@ -138,58 +166,72 @@
   },
   {
     "name": "cite",
+    "isBoolean": false,
     "description": "Specifies a URL that explains the quote, or why a text was inserted/deleted."
   },
   {
     "name": "class",
+    "isBoolean": false,
     "description": "Specifies one or more class names for an element."
   },
   {
     "name": "classid",
+    "isBoolean": false,
     "description": "Specifies the class id of an object (deprecated)."
   },
   {
     "name": "clear",
+    "isBoolean": false,
     "description": "Specifies where the next line should appear after a line break (deprecated)."
   },
   {
     "name": "code",
+    "isBoolean": false,
     "description": "Specifies the URL of the applet's class file to be loaded and executed."
   },
   {
     "name": "codebase",
+    "isBoolean": false,
     "description": "Specifies the base URL for an applet."
   },
   {
     "name": "codetype",
+    "isBoolean": false,
     "description": "Specifies the MIME type of the code of an object (deprecated)."
   },
   {
     "name": "color",
+    "isBoolean": false,
     "description": "Specifies the text color of an element."
   },
   {
     "name": "cols",
+    "isBoolean": false,
     "description": "Specifies the visible width of a text area."
   },
   {
     "name": "colspan",
+    "isBoolean": false,
     "description": "Specifies the number of columns a cell should span."
   },
   {
     "name": "compact",
+    "isBoolean": false,
     "description": "Specifies that a list should be rendered more compactly (deprecated)."
   },
   {
     "name": "content",
+    "isBoolean": false,
     "description": "Gives the value associated with the http-equiv or name attribute."
   },
   {
     "name": "contenteditable",
+    "isBoolean": false,
     "description": "Specifies whether the content of an element is editable."
   },
   {
     "name": "contextmenu",
+    "isBoolean": false,
     "description": "Specifies a context menu for an element."
   },
   {
@@ -199,34 +241,42 @@
   },
   {
     "name": "coords",
+    "isBoolean": false,
     "description": "Specifies the coordinates of an area in an image-map."
   },
   {
     "name": "crossorigin",
+    "isBoolean": false,
     "description": "Configures the CORS requests for the element's fetched data."
   },
   {
     "name": "csp",
+    "isBoolean": false,
     "description": "Allows specifying a Content Security Policy for the content in the iframe."
   },
   {
     "name": "data",
+    "isBoolean": false,
     "description": "Specifies the URL of the resource to be used by the object."
   },
   {
     "name": "data-*",
+    "isBoolean": false,
     "description": "Used to store custom data private to the page or application."
   },
   {
     "name": "datetime",
+    "isBoolean": false,
     "description": "Specifies the date and time."
   },
   {
     "name": "declare",
+    "isBoolean": false,
     "description": "Declares an object without instantiating it (deprecated)."
   },
   {
     "name": "decoding",
+    "isBoolean": false,
     "description": "Indicates how the browser should load the image."
   },
   {
@@ -241,10 +291,12 @@
   },
   {
     "name": "dir",
+    "isBoolean": false,
     "description": "Specifies the text direction for the content."
   },
   {
     "name": "dirname",
+    "isBoolean": false,
     "description": "Enables the submission of the text directionality of an input field."
   },
   {
@@ -254,54 +306,67 @@
   },
   {
     "name": "download",
+    "isBoolean": false,
     "description": "Specifies that the target will be downloaded when a user clicks on the hyperlink."
   },
   {
     "name": "draggable",
+    "isBoolean": false,
     "description": "Specifies whether an element is draggable or not."
   },
   {
     "name": "enctype",
+    "isBoolean": false,
     "description": "Specifies how the form-data should be encoded when submitting it to the server."
   },
   {
     "name": "enterkeyhint",
+    "isBoolean": false,
     "description": "Specifies what action label to present for the enter key on virtual keyboards."
   },
   {
     "name": "event",
+    "isBoolean": false,
     "description": "Specifies the event a script is triggered by (deprecated)."
   },
   {
     "name": "exportparts",
+    "isBoolean": false,
     "description": "Exports shadow DOM parts of an element to its host page."
   },
   {
     "name": "face",
+    "isBoolean": false,
     "description": "Specifies the font family of the text (deprecated)."
   },
   {
     "name": "fetchpriority",
+    "isBoolean": false,
     "description": "Hints the priority for fetching a resource."
   },
   {
     "name": "for",
+    "isBoolean": false,
     "description": "Specifies which form element a label or output element is bound to."
   },
   {
     "name": "form",
+    "isBoolean": false,
     "description": "Specifies the form the element belongs to."
   },
   {
     "name": "formaction",
+    "isBoolean": false,
     "description": "Specifies where to send the form-data when a form is submitted (for input and button elements)."
   },
   {
     "name": "formenctype",
+    "isBoolean": false,
     "description": "Specifies how form-data should be encoded (for input and button elements)."
   },
   {
     "name": "formmethod",
+    "isBoolean": false,
     "description": "Defines the HTTP method for sending form-data (for input and button elements)."
   },
   {
@@ -311,66 +376,82 @@
   },
   {
     "name": "formtarget",
+    "isBoolean": false,
     "description": "Specifies where to display the response after submitting the form."
   },
   {
     "name": "frame",
+    "isBoolean": false,
     "description": "Specifies which parts of the table border should be visible (deprecated)."
   },
   {
     "name": "frameborder",
+    "isBoolean": false,
     "description": "Specifies whether to display a border around an iframe (deprecated)."
   },
   {
     "name": "headers",
+    "isBoolean": false,
     "description": "Specifies one or more header cells a cell is related to."
   },
   {
     "name": "height",
+    "isBoolean": false,
     "description": "Specifies the height of the element."
   },
   {
     "name": "hidden",
+    "isBoolean": false,
     "description": "Specifies that an element is not yet, or is no longer, relevant."
   },
   {
     "name": "high",
+    "isBoolean": false,
     "description": "Specifies the range that is considered to be a high value."
   },
   {
     "name": "href",
+    "isBoolean": false,
     "description": "Specifies the URL of the page the link goes to."
   },
   {
     "name": "hreflang",
+    "isBoolean": false,
     "description": "Specifies the language of the linked document."
   },
   {
     "name": "hspace",
+    "isBoolean": false,
     "description": "Specifies the horizontal space around an element (deprecated)."
   },
   {
     "name": "http-equiv",
+    "isBoolean": false,
     "description": "Provides an HTTP header for the information/value of the content attribute."
   },
   {
     "name": "icon",
+    "isBoolean": false,
     "description": "Specifies an icon for the command."
   },
   {
     "name": "id",
+    "isBoolean": false,
     "description": "Specifies a unique id for an element."
   },
   {
     "name": "imagesizes",
+    "isBoolean": false,
     "description": "Specifies image sizes for preloaded images (link rel='preload')."
   },
   {
     "name": "imagesrcset",
+    "isBoolean": false,
     "description": "Specifies image candidates for preloaded images (link rel='preload')."
   },
   {
     "name": "importance",
+    "isBoolean": false,
     "description": "Indicates the relative fetch priority for the resource."
   },
   {
@@ -380,10 +461,12 @@
   },
   {
     "name": "inputmode",
+    "isBoolean": false,
     "description": "Hints the type of virtual keyboard to use for a form field."
   },
   {
     "name": "integrity",
+    "isBoolean": false,
     "description": "Allows a browser to verify the fetched resource's integrity."
   },
   {
@@ -393,14 +476,17 @@
   },
   {
     "name": "itemid",
+    "isBoolean": false,
     "description": "Specifies a global identifier for a microdata item."
   },
   {
     "name": "itemprop",
+    "isBoolean": false,
     "description": "Defines a property of an item."
   },
   {
     "name": "itemref",
+    "isBoolean": false,
     "description": "References additional elements that provide properties for a microdata item."
   },
   {
@@ -410,38 +496,47 @@
   },
   {
     "name": "itemtype",
+    "isBoolean": false,
     "description": "Specifies the vocabulary used by a microdata item."
   },
   {
     "name": "keytype",
+    "isBoolean": false,
     "description": "Specifies the security algorithm of a key."
   },
   {
     "name": "kind",
+    "isBoolean": false,
     "description": "Specifies the kind of text track."
   },
   {
     "name": "label",
+    "isBoolean": false,
     "description": "Specifies the title of the text track."
   },
   {
     "name": "lang",
+    "isBoolean": false,
     "description": "Specifies the language of the element's content."
   },
   {
     "name": "language",
+    "isBoolean": false,
     "description": "Deprecated. Specifies the scripting language used for the script."
   },
   {
     "name": "list",
+    "isBoolean": false,
     "description": "Refers to a datalist element that contains pre-defined options."
   },
   {
     "name": "loading",
+    "isBoolean": false,
     "description": "Indicates how the browser should load the image or iframe."
   },
   {
     "name": "longdesc",
+    "isBoolean": false,
     "description": "Specifies a URL with a detailed description of an image (deprecated)."
   },
   {
@@ -451,42 +546,52 @@
   },
   {
     "name": "low",
+    "isBoolean": false,
     "description": "Specifies the range that is considered to be a low value."
   },
   {
     "name": "manifest",
+    "isBoolean": false,
     "description": "Specifies the URL of the document's cache manifest."
   },
   {
     "name": "marginheight",
+    "isBoolean": false,
     "description": "Specifies the top and bottom margins of an iframe (deprecated)."
   },
   {
     "name": "marginwidth",
+    "isBoolean": false,
     "description": "Specifies the left and right margins of an iframe (deprecated)."
   },
   {
     "name": "max",
+    "isBoolean": false,
     "description": "Specifies the maximum value."
   },
   {
     "name": "maxlength",
+    "isBoolean": false,
     "description": "Specifies the maximum number of characters allowed in an input field."
   },
   {
     "name": "media",
+    "isBoolean": false,
     "description": "Specifies what media/device the linked document is optimized for."
   },
   {
     "name": "method",
+    "isBoolean": false,
     "description": "Specifies the HTTP method to use when sending form-data."
   },
   {
     "name": "min",
+    "isBoolean": false,
     "description": "Specifies the minimum value."
   },
   {
     "name": "minlength",
+    "isBoolean": false,
     "description": "Specifies the minimum number of characters required in an input field."
   },
   {
@@ -501,10 +606,12 @@
   },
   {
     "name": "name",
+    "isBoolean": false,
     "description": "Specifies the name of the element."
   },
   {
     "name": "nohref",
+    "isBoolean": false,
     "description": "Specifies that an area has no associated link (deprecated)."
   },
   {
@@ -514,14 +621,17 @@
   },
   {
     "name": "nonce",
+    "isBoolean": false,
     "description": "A cryptographic nonce used in Content Security Policy."
   },
   {
     "name": "noresize",
+    "isBoolean": false,
     "description": "Specifies that a frame cannot be resized (deprecated)."
   },
   {
     "name": "noshade",
+    "isBoolean": false,
     "description": "Specifies that a horizontal rule has no shading (deprecated)."
   },
   {
@@ -531,362 +641,452 @@
   },
   {
     "name": "nowrap",
+    "isBoolean": false,
     "description": "Specifies that content should not wrap (deprecated)."
   },
   {
     "name": "onabort",
+    "isBoolean": false,
     "description": "Fires when the loading of a resource is aborted."
   },
   {
     "name": "onanimationcancel",
+    "isBoolean": false,
     "description": "Fires when a CSS animation is unexpectedly interrupted."
   },
   {
     "name": "onanimationend",
+    "isBoolean": false,
     "description": "Fires when a CSS animation finishes."
   },
   {
     "name": "onanimationiteration",
+    "isBoolean": false,
     "description": "Fires when a CSS animation repeats."
   },
   {
     "name": "onanimationstart",
+    "isBoolean": false,
     "description": "Fires when a CSS animation starts."
   },
   {
     "name": "onauxclick",
+    "isBoolean": false,
     "description": "Fires when a non-primary mouse button is clicked."
   },
   {
     "name": "onbeforeinput",
+    "isBoolean": false,
     "description": "Fires when an input event is about to fire."
   },
   {
     "name": "onbeforematch",
+    "isBoolean": false,
     "description": "Fires when a hidden section is matched by the find-in-page feature."
   },
   {
     "name": "onbeforetoggle",
+    "isBoolean": false,
     "description": "Fires when a popover or details element is about to toggle."
   },
   {
     "name": "onblur",
+    "isBoolean": false,
     "description": "Fires when an element loses focus."
   },
   {
     "name": "oncancel",
+    "isBoolean": false,
     "description": "Fires when the user cancels a dialog."
   },
   {
     "name": "oncanplay",
+    "isBoolean": false,
     "description": "Fires when the media can start playing."
   },
   {
     "name": "oncanplaythrough",
+    "isBoolean": false,
     "description": "Fires when the media can play through without buffering."
   },
   {
     "name": "onchange",
+    "isBoolean": false,
     "description": "Fires when the value of a form element changes."
   },
   {
     "name": "onclick",
+    "isBoolean": false,
     "description": "Fires when the user clicks an element."
   },
   {
     "name": "onclose",
+    "isBoolean": false,
     "description": "Fires when a dialog is closed."
   },
   {
     "name": "oncontextlost",
+    "isBoolean": false,
     "description": "Fires when a context menu cannot open."
   },
   {
     "name": "oncontextmenu",
+    "isBoolean": false,
     "description": "Fires when the user opens a context menu."
   },
   {
     "name": "oncontextrestored",
+    "isBoolean": false,
     "description": "Fires when a context menu is restored."
   },
   {
     "name": "oncopy",
+    "isBoolean": false,
     "description": "Fires when the user copies content."
   },
   {
     "name": "oncuechange",
+    "isBoolean": false,
     "description": "Fires when the current cue of a text track changes."
   },
   {
     "name": "oncut",
+    "isBoolean": false,
     "description": "Fires when the user cuts content."
   },
   {
     "name": "ondblclick",
+    "isBoolean": false,
     "description": "Fires when the user double-clicks an element."
   },
   {
     "name": "ondrag",
+    "isBoolean": false,
     "description": "Fires when an element is being dragged."
   },
   {
     "name": "ondragend",
+    "isBoolean": false,
     "description": "Fires when a drag operation ends."
   },
   {
     "name": "ondragenter",
+    "isBoolean": false,
     "description": "Fires when a dragged element enters a drop target."
   },
   {
     "name": "ondragleave",
+    "isBoolean": false,
     "description": "Fires when a dragged element leaves a drop target."
   },
   {
     "name": "ondragover",
+    "isBoolean": false,
     "description": "Fires when a dragged element is over a drop target."
   },
   {
     "name": "ondragstart",
+    "isBoolean": false,
     "description": "Fires when a drag operation starts."
   },
   {
     "name": "ondrop",
+    "isBoolean": false,
     "description": "Fires when a dragged element is dropped."
   },
   {
     "name": "ondurationchange",
+    "isBoolean": false,
     "description": "Fires when the duration of the media changes."
   },
   {
     "name": "onemptied",
+    "isBoolean": false,
     "description": "Fires when the media becomes empty."
   },
   {
     "name": "onended",
+    "isBoolean": false,
     "description": "Fires when the media reaches the end."
   },
   {
     "name": "onerror",
+    "isBoolean": false,
     "description": "Fires when a resource fails to load."
   },
   {
     "name": "onfocus",
+    "isBoolean": false,
     "description": "Fires when an element gains focus."
   },
   {
     "name": "onformdata",
+    "isBoolean": false,
     "description": "Fires when the form data set is built."
   },
   {
     "name": "ongotpointercapture",
+    "isBoolean": false,
     "description": "Fires when a pointer is captured."
   },
   {
     "name": "oninput",
+    "isBoolean": false,
     "description": "Fires when the value of an input element changes."
   },
   {
     "name": "oninvalid",
+    "isBoolean": false,
     "description": "Fires when a form element fails validation."
   },
   {
     "name": "onkeydown",
+    "isBoolean": false,
     "description": "Fires when a key is pressed down."
   },
   {
     "name": "onkeypress",
+    "isBoolean": false,
     "description": "Fires when a key is pressed (deprecated)."
   },
   {
     "name": "onkeyup",
+    "isBoolean": false,
     "description": "Fires when a key is released."
   },
   {
     "name": "onload",
+    "isBoolean": false,
     "description": "Fires when a resource finishes loading."
   },
   {
     "name": "onloadeddata",
+    "isBoolean": false,
     "description": "Fires when the first frame of the media is loaded."
   },
   {
     "name": "onloadedmetadata",
+    "isBoolean": false,
     "description": "Fires when the metadata of the media is loaded."
   },
   {
     "name": "onloadstart",
+    "isBoolean": false,
     "description": "Fires when the loading of a resource starts."
   },
   {
     "name": "onlostpointercapture",
+    "isBoolean": false,
     "description": "Fires when pointer capture is released."
   },
   {
     "name": "onmousedown",
+    "isBoolean": false,
     "description": "Fires when a mouse button is pressed down."
   },
   {
     "name": "onmouseenter",
+    "isBoolean": false,
     "description": "Fires when the pointer enters an element."
   },
   {
     "name": "onmouseleave",
+    "isBoolean": false,
     "description": "Fires when the pointer leaves an element."
   },
   {
     "name": "onmousemove",
+    "isBoolean": false,
     "description": "Fires when the pointer moves over an element."
   },
   {
     "name": "onmouseout",
+    "isBoolean": false,
     "description": "Fires when the pointer leaves an element or one of its children."
   },
   {
     "name": "onmouseover",
+    "isBoolean": false,
     "description": "Fires when the pointer moves onto an element."
   },
   {
     "name": "onmouseup",
+    "isBoolean": false,
     "description": "Fires when a mouse button is released."
   },
   {
     "name": "onpaste",
+    "isBoolean": false,
     "description": "Fires when the user pastes content."
   },
   {
     "name": "onpause",
+    "isBoolean": false,
     "description": "Fires when the media is paused."
   },
   {
     "name": "onplay",
+    "isBoolean": false,
     "description": "Fires when the media starts playing."
   },
   {
     "name": "onplaying",
+    "isBoolean": false,
     "description": "Fires when the media is playing."
   },
   {
     "name": "onpointercancel",
+    "isBoolean": false,
     "description": "Fires when a pointer event is cancelled."
   },
   {
     "name": "onpointerdown",
+    "isBoolean": false,
     "description": "Fires when a pointer is pressed down."
   },
   {
     "name": "onpointerenter",
+    "isBoolean": false,
     "description": "Fires when the pointer enters the hit test area."
   },
   {
     "name": "onpointerleave",
+    "isBoolean": false,
     "description": "Fires when the pointer leaves the hit test area."
   },
   {
     "name": "onpointermove",
+    "isBoolean": false,
     "description": "Fires when the pointer moves."
   },
   {
     "name": "onpointerout",
+    "isBoolean": false,
     "description": "Fires when the pointer leaves the hit test boundaries."
   },
   {
     "name": "onpointerover",
+    "isBoolean": false,
     "description": "Fires when the pointer moves onto the hit test area."
   },
   {
     "name": "onpointerup",
+    "isBoolean": false,
     "description": "Fires when the pointer is released."
   },
   {
     "name": "onprogress",
+    "isBoolean": false,
     "description": "Fires while the media is loading."
   },
   {
     "name": "onratechange",
+    "isBoolean": false,
     "description": "Fires when the playback rate changes."
   },
   {
     "name": "onreset",
+    "isBoolean": false,
     "description": "Fires when a form is reset."
   },
   {
     "name": "onresize",
+    "isBoolean": false,
     "description": "Fires when the document view is resized."
   },
   {
     "name": "onscroll",
+    "isBoolean": false,
     "description": "Fires when the document or an element is scrolled."
   },
   {
     "name": "onscrollend",
+    "isBoolean": false,
     "description": "Fires when scrolling ends."
   },
   {
     "name": "onsecuritypolicyviolation",
+    "isBoolean": false,
     "description": "Fires when a Content Security Policy is violated."
   },
   {
     "name": "onseeked",
+    "isBoolean": false,
     "description": "Fires when a seek operation finishes."
   },
   {
     "name": "onseeking",
+    "isBoolean": false,
     "description": "Fires when a seek operation starts."
   },
   {
     "name": "onselect",
+    "isBoolean": false,
     "description": "Fires when text is selected."
   },
   {
     "name": "onslotchange",
+    "isBoolean": false,
     "description": "Fires when the assigned nodes of a slot change."
   },
   {
     "name": "onstalled",
+    "isBoolean": false,
     "description": "Fires when the media is stalled."
   },
   {
     "name": "onsubmit",
+    "isBoolean": false,
     "description": "Fires when a form is submitted."
   },
   {
     "name": "onsuspend",
+    "isBoolean": false,
     "description": "Fires when the media is suspended."
   },
   {
     "name": "ontimeupdate",
+    "isBoolean": false,
     "description": "Fires when the playback position changes."
   },
   {
     "name": "ontoggle",
+    "isBoolean": false,
     "description": "Fires when a details or popover element toggles."
   },
   {
     "name": "ontransitioncancel",
+    "isBoolean": false,
     "description": "Fires when a CSS transition is cancelled."
   },
   {
     "name": "ontransitionend",
+    "isBoolean": false,
     "description": "Fires when a CSS transition finishes."
   },
   {
     "name": "ontransitionrun",
+    "isBoolean": false,
     "description": "Fires when a CSS transition starts running."
   },
   {
     "name": "ontransitionstart",
+    "isBoolean": false,
     "description": "Fires when a CSS transition starts."
   },
   {
     "name": "onvolumechange",
+    "isBoolean": false,
     "description": "Fires when the media volume changes."
   },
   {
     "name": "onwaiting",
+    "isBoolean": false,
     "description": "Fires when the media is waiting for data."
   },
   {
     "name": "onwheel",
+    "isBoolean": false,
     "description": "Fires when the mouse wheel is rotated."
   },
   {
@@ -896,22 +1096,27 @@
   },
   {
     "name": "optimum",
+    "isBoolean": false,
     "description": "Specifies the optimal value of the gauge."
   },
   {
     "name": "part",
+    "isBoolean": false,
     "description": "Identifies the element as a part of a shadow DOM."
   },
   {
     "name": "pattern",
+    "isBoolean": false,
     "description": "Specifies a regular expression that the input element's value is checked against."
   },
   {
     "name": "ping",
+    "isBoolean": false,
     "description": "Specifies a space-separated list of URLs to be notified if a user follows the hyperlink."
   },
   {
     "name": "placeholder",
+    "isBoolean": false,
     "description": "Specifies a short hint that describes the expected value of an input field."
   },
   {
@@ -921,26 +1126,32 @@
   },
   {
     "name": "popover",
+    "isBoolean": false,
     "description": "Marks an element as a popover."
   },
   {
     "name": "popovertarget",
+    "isBoolean": false,
     "description": "Specifies the id of the popover element to toggle."
   },
   {
     "name": "popovertargetaction",
+    "isBoolean": false,
     "description": "Specifies the action to perform on the popover target."
   },
   {
     "name": "poster",
+    "isBoolean": false,
     "description": "Specifies an image to be shown while the video is downloading or until the user hits the play button."
   },
   {
     "name": "preload",
+    "isBoolean": false,
     "description": "Specifies if and how the author thinks the audio/video should be loaded when the page loads."
   },
   {
     "name": "radiogroup",
+    "isBoolean": false,
     "description": "Specifies the group of radio buttons a command belongs to (deprecated)."
   },
   {
@@ -950,10 +1161,12 @@
   },
   {
     "name": "referrerpolicy",
+    "isBoolean": false,
     "description": "Specifies which referrer information to send when fetching a resource."
   },
   {
     "name": "rel",
+    "isBoolean": false,
     "description": "Specifies the relationship between the current document and the linked document."
   },
   {
@@ -963,6 +1176,7 @@
   },
   {
     "name": "results",
+    "isBoolean": false,
     "description": "Specifies the maximum number of results to show in a search input (deprecated)."
   },
   {
@@ -972,34 +1186,42 @@
   },
   {
     "name": "role",
+    "isBoolean": false,
     "description": "Defines the role of an element for accessibility purposes."
   },
   {
     "name": "rows",
+    "isBoolean": false,
     "description": "Specifies the visible number of lines in a text area."
   },
   {
     "name": "rowspan",
+    "isBoolean": false,
     "description": "Specifies the number of rows a cell should span."
   },
   {
     "name": "rules",
+    "isBoolean": false,
     "description": "Specifies which rules to display between table cells (deprecated)."
   },
   {
     "name": "sandbox",
+    "isBoolean": false,
     "description": "Enables an extra set of restrictions for the content in an iframe."
   },
   {
     "name": "scope",
+    "isBoolean": false,
     "description": "Specifies whether a header cell is a header for a column, row, or group of columns or rows."
   },
   {
     "name": "scoped",
+    "isBoolean": false,
     "description": "Specifies that the styles only apply to this element's parent and child elements."
   },
   {
     "name": "scrolling",
+    "isBoolean": false,
     "description": "Specifies whether to display scrollbars in an iframe (deprecated)."
   },
   {
@@ -1009,110 +1231,137 @@
   },
   {
     "name": "shape",
+    "isBoolean": false,
     "description": "Specifies the shape of an area in an image-map."
   },
   {
     "name": "size",
+    "isBoolean": false,
     "description": "Specifies the width, in characters, of an input field."
   },
   {
     "name": "sizes",
+    "isBoolean": false,
     "description": "Specifies the sizes of icons for visual media."
   },
   {
     "name": "slot",
+    "isBoolean": false,
     "description": "Assigns a slot in a shadow DOM shadow tree."
   },
   {
     "name": "span",
+    "isBoolean": false,
     "description": "Defines the number of columns to span for a col or colgroup element."
   },
   {
     "name": "spellcheck",
+    "isBoolean": false,
     "description": "Specifies whether the element is to have its spelling and grammar checked or not."
   },
   {
     "name": "src",
+    "isBoolean": false,
     "description": "Specifies the URL of the media file."
   },
   {
     "name": "srcdoc",
+    "isBoolean": false,
     "description": "Specifies the HTML content of the page to show in the iframe."
   },
   {
     "name": "srclang",
+    "isBoolean": false,
     "description": "Specifies the language of the track text data (required if kind='subtitles')."
   },
   {
     "name": "srcset",
+    "isBoolean": false,
     "description": "Specifies the URL of the image to use in different situations."
   },
   {
     "name": "standby",
+    "isBoolean": false,
     "description": "Specifies a message to show while an object loads (deprecated)."
   },
   {
     "name": "start",
+    "isBoolean": false,
     "description": "Specifies the start value of an ordered list."
   },
   {
     "name": "step",
+    "isBoolean": false,
     "description": "Specifies the legal number intervals for an input field."
   },
   {
     "name": "style",
+    "isBoolean": false,
     "description": "Specifies an inline CSS style for an element."
   },
   {
     "name": "summary",
+    "isBoolean": false,
     "description": "Specifies a summary of the content of a table (deprecated in HTML5)."
   },
   {
     "name": "tabindex",
+    "isBoolean": false,
     "description": "Specifies the tabbing order of an element."
   },
   {
     "name": "target",
+    "isBoolean": false,
     "description": "Specifies where to open the linked document."
   },
   {
     "name": "title",
+    "isBoolean": false,
     "description": "Specifies extra information about an element."
   },
   {
     "name": "translate",
+    "isBoolean": false,
     "description": "Specifies whether the content of an element should be translated or not."
   },
   {
     "name": "type",
+    "isBoolean": false,
     "description": "Specifies the type of element."
   },
   {
     "name": "usemap",
+    "isBoolean": false,
     "description": "Specifies an image as a client-side image-map."
   },
   {
     "name": "valign",
+    "isBoolean": false,
     "description": "Specifies the vertical alignment of the content (deprecated)."
   },
   {
     "name": "value",
+    "isBoolean": false,
     "description": "Specifies the value of the element."
   },
   {
     "name": "valuetype",
+    "isBoolean": false,
     "description": "Specifies the type of the value of a param element (deprecated)."
   },
   {
     "name": "vspace",
+    "isBoolean": false,
     "description": "Specifies the vertical space around an element (deprecated)."
   },
   {
     "name": "width",
+    "isBoolean": false,
     "description": "Specifies the width of the element."
   },
   {
     "name": "wrap",
+    "isBoolean": false,
     "description": "Specifies how the text in a text area is to be wrapped when submitted in a form."
   }
 ]

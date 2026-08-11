@@ -131,9 +131,9 @@ special mention. When their value is boolean `true`, they render as just the
 attribute name (e.g.`<input disabled>`). When `false`, they are omitted
 entirely.
 
-The reference data (`./data/attributes.json`) marks every attribute that HTML
-defines as boolean with `"isBoolean": true`, so implementations can rely on that
-flag instead of maintaining their own list.
+The reference data (`./data/attributes.json`) marks every attribute with an
+`isBoolean` flag (`true` for the ones HTML defines as boolean) so
+implementations can rely on that flag instead of maintaining their own list.
 
 ### Text
 
@@ -226,14 +226,6 @@ your own lists.
 | `data/elements.json`   | Every HTML element, with its `isVoid` flag and a short description.                                |
 | `data/attributes.json` | Every HTML attribute (including event handlers), with a short description and an `isBoolean` flag. |
 | `data/keywords.json`   | Reserved words per language, to detect naming collisions during code generation.                   |
-
-The `isBoolean` flag in `data/attributes.json` is present (`true`) only on
-attributes that the HTML standard itself defines as boolean attributes: they
-take no value and merely appear or disappear, so they render as just the
-attribute name or are omitted entirely. Attributes that merely look boolean but
-can carry a value or keyword are intentionally **not** marked - e.g. `hidden`
-(an enumerated attribute that also accepts `until-found`), `download` (accepts a
-filename), `capture`, `popover` and `sandbox` (keyword/token values).
 
 > Note: If you notice any inconsistencies, missing or extra data in these files,
 > an issue or pull request would be greatly appreciated to help keep the

@@ -1,78 +1,110 @@
-# Specification for "nodx" Cross-Language Template Engine
+# The NodX Specification
 
-## Overview
+NodX is a cross-language HTML template engine. The idea is simple: instead of
+learning a template syntax, you build HTML with the plain functions of your own
+programming language. No strings, no DSL, no magic, just code.
 
-**nodx** is a cross-language HTML template engine that enables developers to
-construct HTML DOM structures using native functions or methods in various
-programming languages. In **nodx**, **everything is a node**—both HTML elements
-and attributes are treated as nodes. This unified approach simplifies the
-programmatic creation and manipulation of HTML structures.
+This document is the contract that every NodX implementation should follow. If
+you are building a NodX library for your favorite language, this is your guide.
 
-The DOM structure is built using functions or methods that represent HTML
-elements and attributes. Once the node tree is constructed, a `render`
-method/function is used to produce the final rendered template, typically as an
-HTML string.
+## The big idea
 
-## Core Concepts
+Most template engines work like this: you write HTML with a special syntax
+(`{{ }}`, `{% %}`, `<% %>`...) and the engine parses it at runtime. That means
+two languages in one file, no autocomplete, no type safety, and a debugging
+session every time you mistype a variable name.
 
-### Nodes
+NodX flips the script. The programming language _is_ the template language. HTML
+elements and attributes become plain functions (e.g. `Div()`, `Class()`,
+`Img()`) and you compose them like any other data structure. The result is a
+tree of nodes that you can inspect, reuse, and finally `render` into an HTML
+string.
 
-- **Element Nodes**: Represent HTML elements (e.g., `div`, `img`).
-- **Attribute Nodes**: Represent HTML attributes (e.g., `class`, `src`).
-- **Text Nodes**: Represent text content within elements.
+## Core concepts
 
-All nodes can render themselves into a string representation that forms part of
-the final HTML output.
+### Everything is a node
 
-## API
+The whole engine is built around a single rule:
 
-### Node Creation
+> **Everything is a node.**
 
-#### Element Nodes
+There are exactly three kinds of nodes:
 
-- Created using functions or constructors named from HTML elements.
-- Accept a variable list of attributes and child nodes.
+| Node           | What it represents             | Example                |
+| -------------- | ------------------------------ | ---------------------- |
+| Element node   | An HTML element                | `div`, `img`, `button` |
+| Attribute node | An HTML attribute              | `class`, `src`, `href` |
+| Text node      | Text content inside an element | `"Hello, world!"`      |
 
-**Syntax Example:**
+Elements contain other nodes: attributes describe them, text and other elements
+live inside them. That's it, there is nothing else to learn.
+
+### Build, then render
+
+Working with NodX always has two phases:
+
+1. **Build** - create nodes and nest them however you like.
+2. **Render** - call `render()` on the root node to get the final HTML string.
+
+The build phase is where you can do anything your language allows: loops,
+conditionals, helper functions, your own components. The render phase is a
+boring, predictable walk over the tree.
+
+## The API (pseudo-code)
+
+The exact spelling depends on the language, but every implementation must offer
+the same building blocks.
+
+### Elements
+
+Elements are functions named after HTML tags, in PascalCase (if the language
+allows it): `div` becomes `Div`, `img` becomes `Img`, and so on. They take a
+variable list of arguments (attributes, children or both) in any order.
 
 ```pseudo
-Element(attributes..., children...) -> ElementNode
+Div(attributes..., children...) -> ElementNode
+Img(attributes..., children...) -> ElementNode
 ```
 
-#### Attribute Nodes
+### Attributes
 
-- Created using functions or constructors named from HTML attributes.
-- Accept a value parameter.
-
-**Syntax Example:**
+Attributes are functions named after HTML attributes, also in PascalCase (if the
+language allows it), and take exactly one argument: the value.
 
 ```pseudo
-Attribute(value) -> AttributeNode
+Class("card") -> AttributeNode
+Src("/img/avatar.png") -> AttributeNode
 ```
 
-#### Text Nodes
+**Boolean attributes** (like `checked`, `disabled`, `hidden`) deserve a special
+mention. When their value is boolean `true`, they render as just the attribute
+name (e.g.`<input disabled>`). When `false`, they are omitted entirely.
 
-- Created using a specific function for text content.
+### Text
 
-**Syntax Example:**
+Text nodes hold content and are **always escaped by default**. If you ever need
+to inject raw HTML (e.g. output from a trusted markdown renderer) the
+implementation should offer an explicit escape hatch (a `Raw` or `UnsafeHTML`
+function) that makes it obvious you are bypassing safety.
 
 ```pseudo
-Text(content) -> TextNode
+Text("<b>bold</b>")   # renders as &lt;b&gt;bold&lt;/b&gt;
+Raw("<b>bold</b>")    # renders as <b>bold</b>, use with care!
 ```
 
-### Rendering
+### Render
 
-- When possible each node has a `render` method that produces its string
-  representation.
-- Rendering is recursive: element nodes render their attributes and children.
+```pseudo
+node.render() -> string
+```
 
-## Usage Example
+Rendering is recursive: an element renders its opening tag, its attributes (in
+insertion order), its children and its closing tag (unless it is a void
+element).
 
-### Creating a Component
+## A worked example
 
-Create an avatar component:
-
-**Pseudo-code:**
+Say we want an avatar component: a container with an image inside.
 
 ```pseudo
 avatar = Div(
@@ -83,41 +115,75 @@ avatar = Div(
         Src("avatar.png")
     )
 )
-```
 
-### Rendering the Structure
-
-Render the node tree to produce the final output:
-
-```pseudo
 output = avatar.render()
 ```
 
-**Expected Output:**
+Which produces:
 
 ```html
 <div class="avatar-container">
-  <img class="avatar-image" alt="Avatar" src="avatar.png" />
+   <img class="avatar-image" alt="Avatar" src="avatar.png" />
 </div>
 ```
 
-## Advantages of this approach
+> Note: The indentation above is just for readability. Implementations may
+> pretty-print or not, treat whitespace in the output as an implementation
+> detail, never as part of the contract.
 
-- **Simplicity**: Fewer classes and interfaces make it easier to understand and
-  implement.
-- **Language-Agnostic**: The design can be implemented in any programming
-  language.
-- **Flexibility**: Developers can easily extend, customize the functionality and
-  build component libraries.
-- **No special syntax**: No need for special syntax or templating language. This
-  allows to use the full power of the programming language to create and
-  manipulate the templates.
+## Rules every implementation must follow
 
-## Final Considerations
+These are the non-negotiables. Skip any of them and you are not NodX:
 
-- **Void Elements**: Handle HTML elements that do not require closing tags
-  (e.g., `img`, `br`) appropriately.
-- **HTML Escaping**: Always escape attribute values and text content to prevent
-  security vulnerabilities.
-- **Customization**: Developers can create additional helper functions or nodes
-  for custom components.
+1. **Void elements have no closing tag.** `img`, `br`, `input` and friends
+   render as `<img ...>`. Self-closing syntax (`<img ... />`) is allowed but
+   optional. The full list lives in the reference data (`./data/elements.json`).
+2. **Escape by default.** Attribute values and text content must be escaped to
+   protect users from XSS. Raw HTML is opt-in only.
+3. **Boolean attributes render without a value.** `Disabled(true)` → `disabled`,
+   `Disabled(false)` → nothing.
+4. **Keep insertion order** of attributes and children.
+5. **Resolve keyword collisions.** If an element or attribute name collides with
+   a keyword of the target language, pick a deterministic escape (like a suffix,
+   e.g. `title` → `TitleEl`) and document it (see `./data/keywords.json`).
+6. **Support custom components.** Users must be able to write functions that
+   return a node tree. That is how component libraries are born.
+7. **Maintain a simple and consistent API.** All NodX implementations should be
+   small, including only the things a user might need to build their HTML
+   templates, and should avoid adding unnecessary ceremony or functionality.
+   Helpers should be minimal, universal, genuinely useful, and without
+   unnecessary abstractions.
+
+Implementations are free to add conveniences on top (conditional rendering,
+class maps, loops, you name it) as long as these rules hold and the
+implementation is simple enough.
+
+## Reference data
+
+This repository ships three JSON files that are the source of truth for code
+generators (useful to generate the implementation's boilerplate). If you are
+implementing NodX, build your language bindings from these files; do not invent
+your own lists.
+
+| File                   | Contents                                                                         |
+| ---------------------- | -------------------------------------------------------------------------------- |
+| `data/elements.json`   | Every HTML element, with its `isVoid` flag and a short description.              |
+| `data/attributes.json` | Every HTML attribute (including event handlers), with a short description.       |
+| `data/keywords.json`   | Reserved words per language, to detect naming collisions during code generation. |
+
+> Note: If you notice any inconsistencies, missing or extra data in these files,
+> an issue or pull request would be greatly appreciated to help keep the
+> ecosystem as polished as possible.
+
+## Why this approach?
+
+- **Simplicity.** One concept (the node), a handful of functions. Nothing else
+  to learn. If you know your language and HTML, you already know NodX and how to
+  implement it if it doesn't already exist for your language.
+- **Language-agnostic.** Any language that can express a function can express
+  NodX.
+- **Your language's full power.** Loops, conditionals, types, tests, all
+  available while building templates.
+- **No template syntax.** No parser, no preprocessor, no new tooling.
+- **Composable.** Components are just functions that return nodes. Build a
+  design system the same way you build any other library.

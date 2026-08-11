@@ -1,6 +1,19 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/debian
 {
-  "name": "NodX",
-  "image": "ghcr.io/nodxdev/nodxdc:latest"
+  "build": {
+    "dockerfile": "./Dockerfile"
+  },
+  "remoteUser": "root",
+  "postCreateCommand": "bash ./.devcontainer/post-create.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "denoland.vscode-deno"
+      ],
+      "settings": {
+        "deno.enable": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "denoland.vscode-deno"
+      }
+    }
+  }
 }

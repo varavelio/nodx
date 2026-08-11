@@ -1,8 +1,0 @@
-# https://taskfile.dev
-
-version: "3"
-
-tasks:
-  fmt:
-    desc: Format the code
-    cmd: deno fmt

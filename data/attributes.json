@@ -29,6 +29,7 @@
   },
   {
     "name": "allowfullscreen",
+    "isBoolean": true,
     "description": "Specifies that an iframe can be displayed in fullscreen mode."
   },
   {
@@ -49,6 +50,7 @@
   },
   {
     "name": "async",
+    "isBoolean": true,
     "description": "Indicates that the script should be executed asynchronously."
   },
   {
@@ -65,10 +67,12 @@
   },
   {
     "name": "autofocus",
+    "isBoolean": true,
     "description": "Specifies that an input field should automatically get focus when the page loads."
   },
   {
     "name": "autoplay",
+    "isBoolean": true,
     "description": "Specifies that the audio/video should start playing as soon as it is ready."
   },
   {
@@ -129,6 +133,7 @@
   },
   {
     "name": "checked",
+    "isBoolean": true,
     "description": "Specifies that an input element should be pre-selected when the page loads."
   },
   {
@@ -189,6 +194,7 @@
   },
   {
     "name": "controls",
+    "isBoolean": true,
     "description": "Specifies that audio/video controls should be displayed."
   },
   {
@@ -225,10 +231,12 @@
   },
   {
     "name": "default",
+    "isBoolean": true,
     "description": "Specifies the default track kind."
   },
   {
     "name": "defer",
+    "isBoolean": true,
     "description": "Specifies that the script is executed when the page has finished parsing."
   },
   {
@@ -241,6 +249,7 @@
   },
   {
     "name": "disabled",
+    "isBoolean": true,
     "description": "Specifies that an element should be disabled."
   },
   {
@@ -297,6 +306,7 @@
   },
   {
     "name": "formnovalidate",
+    "isBoolean": true,
     "description": "Defines that form elements should not be validated when submitted."
   },
   {
@@ -365,6 +375,7 @@
   },
   {
     "name": "inert",
+    "isBoolean": true,
     "description": "Makes an element and its children unresponsive to user input."
   },
   {
@@ -377,6 +388,7 @@
   },
   {
     "name": "ismap",
+    "isBoolean": true,
     "description": "Specifies an image as a server-side image-map."
   },
   {
@@ -393,6 +405,7 @@
   },
   {
     "name": "itemscope",
+    "isBoolean": true,
     "description": "Creates a microdata item."
   },
   {
@@ -433,6 +446,7 @@
   },
   {
     "name": "loop",
+    "isBoolean": true,
     "description": "Specifies that the audio/video will start over again, every time it is finished."
   },
   {
@@ -477,10 +491,12 @@
   },
   {
     "name": "multiple",
+    "isBoolean": true,
     "description": "Specifies that a user can enter more than one value."
   },
   {
     "name": "muted",
+    "isBoolean": true,
     "description": "Specifies that the audio output should be muted."
   },
   {
@@ -493,6 +509,7 @@
   },
   {
     "name": "nomodule",
+    "isBoolean": true,
     "description": "Indicates that the script should not be executed in browsers that support module scripts."
   },
   {
@@ -509,6 +526,7 @@
   },
   {
     "name": "novalidate",
+    "isBoolean": true,
     "description": "Specifies that the form should not be validated when submitted."
   },
   {
@@ -873,6 +891,7 @@
   },
   {
     "name": "open",
+    "isBoolean": true,
     "description": "Specifies that the details should be visible to the user."
   },
   {
@@ -897,6 +916,7 @@
   },
   {
     "name": "playsinline",
+    "isBoolean": true,
     "description": "Indicates that the video should play inline on mobile devices."
   },
   {
@@ -925,6 +945,7 @@
   },
   {
     "name": "readonly",
+    "isBoolean": true,
     "description": "Specifies that the input field is read-only."
   },
   {
@@ -937,6 +958,7 @@
   },
   {
     "name": "required",
+    "isBoolean": true,
     "description": "Specifies that the input field must be filled out before submitting the form."
   },
   {
@@ -945,6 +967,7 @@
   },
   {
     "name": "reversed",
+    "isBoolean": true,
     "description": "Specifies that the list order should be descending (9,8,7...)."
   },
   {
@@ -981,6 +1004,7 @@
   },
   {
     "name": "selected",
+    "isBoolean": true,
     "description": "Specifies that an option should be pre-selected when the page loads."
   },
   {

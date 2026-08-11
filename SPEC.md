@@ -126,9 +126,14 @@ Class("card") -> AttributeNode
 Src("/img/avatar.png") -> AttributeNode
 ```
 
-**Boolean attributes** (like `checked`, `disabled`, `hidden`) deserve a special
-mention. When their value is boolean `true`, they render as just the attribute
-name (e.g.`<input disabled>`). When `false`, they are omitted entirely.
+**Boolean attributes** (like `checked`, `disabled`, `required`) deserve a
+special mention. When their value is boolean `true`, they render as just the
+attribute name (e.g.`<input disabled>`). When `false`, they are omitted
+entirely.
+
+The reference data (`./data/attributes.json`) marks every attribute that HTML
+defines as boolean with `"isBoolean": true`, so implementations can rely on that
+flag instead of maintaining their own list.
 
 ### Text
 
@@ -191,7 +196,8 @@ These are the non-negotiables. Skip any of them and you are not NodX:
 2. **Escape by default.** Attribute values and text content must be escaped to
    protect users from XSS. Raw HTML is opt-in only.
 3. **Boolean attributes render without a value.** `Disabled(true)` → `disabled`,
-   `Disabled(false)` → nothing.
+   `Disabled(false)` → nothing. The attributes HTML treats this way are marked
+   with `"isBoolean": true` in `./data/attributes.json`.
 4. **Keep insertion order** of attributes and children.
 5. **Resolve keyword collisions.** If an element or attribute name collides with
    a keyword of the target language, pick a deterministic escape (like a suffix,
@@ -215,11 +221,19 @@ generators (useful to generate the implementation's boilerplate). If you are
 implementing NodX, build your language bindings from these files; do not invent
 your own lists.
 
-| File                   | Contents                                                                         |
-| ---------------------- | -------------------------------------------------------------------------------- |
-| `data/elements.json`   | Every HTML element, with its `isVoid` flag and a short description.              |
-| `data/attributes.json` | Every HTML attribute (including event handlers), with a short description.       |
-| `data/keywords.json`   | Reserved words per language, to detect naming collisions during code generation. |
+| File                   | Contents                                                                                           |
+| ---------------------- | -------------------------------------------------------------------------------------------------- |
+| `data/elements.json`   | Every HTML element, with its `isVoid` flag and a short description.                                |
+| `data/attributes.json` | Every HTML attribute (including event handlers), with a short description and an `isBoolean` flag. |
+| `data/keywords.json`   | Reserved words per language, to detect naming collisions during code generation.                   |
+
+The `isBoolean` flag in `data/attributes.json` is present (`true`) only on
+attributes that the HTML standard itself defines as boolean attributes: they
+take no value and merely appear or disappear, so they render as just the
+attribute name or are omitted entirely. Attributes that merely look boolean but
+can carry a value or keyword are intentionally **not** marked - e.g. `hidden`
+(an enumerated attribute that also accepts `until-found`), `download` (accepts a
+filename), `capture`, `popover` and `sandbox` (keyword/token values).
 
 > Note: If you notice any inconsistencies, missing or extra data in these files,
 > an issue or pull request would be greatly appreciated to help keep the

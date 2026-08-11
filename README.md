@@ -43,6 +43,35 @@ and attribute) that all implementations are built from, so NodX feels the same
 whether you write Go, TypeScript, Python or anything else. Learn it once, use it
 everywhere.
 
+## Why NodX and not a template engine or a JS framework?
+
+Generating HTML on the server usually means choosing between two options, and
+both leave a gap:
+
+- **Template engines** (Jinja, Blade, EJS...) are simple, but HTML lives in
+  strings with magic syntax: no type safety, no autocomplete, and a
+  mini-language to learn.
+- **JavaScript frameworks** (React, Vue, Svelte...) are powerful, but they are
+  built for interactive client-side apps. Virtual DOM, hydration, state, build
+  steps and bundles are a lot of machinery when all you need is `<div>`s on the
+  server.
+
+NodX fills that gap:
+
+|                        | NodX                                                   | Template engine               | JS framework                       |
+| ---------------------- | ------------------------------------------------------ | ----------------------------- | ---------------------------------- |
+| You write HTML with    | native functions (`Div`, `Class`...)                   | strings + `{{ }}` syntax      | JSX / JavaScript                   |
+| Type safety            | full - the compiler catches typos                      | none                          | partial                            |
+| Runtime in the browser | none                                                   | none                          | yes - bundle, hydration            |
+| New syntax to learn    | none                                                   | a mini-language               | JSX + framework concepts           |
+| Built for              | server-rendered HTML, simple UIs, static sites, emails | classic server-rendered pages | rich, interactive client-side apps |
+
+If your job is producing HTML (e.g. a blog, a landing page, an email, a
+server-rendered dashboard) NodX gives you the safety of a framework with none of
+the baggage. And if you are building a real-time, state-heavy app, use a
+framework: NodX is not here to replace React, just to make writing HTML feel
+like writing code again.
+
 ## Implementations
 
 | Language | Implementation                                |

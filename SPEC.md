@@ -20,6 +20,56 @@ elements and attributes become plain functions (e.g. `Div()`, `Class()`,
 tree of nodes that you can inspect, reuse, and finally `render` into an HTML
 string.
 
+## Where NodX fits in the web ecosystem
+
+Server-side web development has settled into two camps, and both leave a gap
+that NodX fills.
+
+**Template engines** (e.g. Jinja, Blade, EJS, Handlebars) are the classic
+answer. They are simple and battle-tested, but HTML lives in strings with a
+special syntax. Your editor cannot check or format it, your compiler cannot
+check it, and the only feedback you get is at runtime, if you are lucky.
+
+**JavaScript frameworks** (e.g. React, Vue, Svelte) are the modern answer. They
+are incredibly powerful for interactive applications, but that power comes with
+a price: a runtime in the browser, a virtual DOM, hydration, state management, a
+build step, and usually a second language in your project just to print
+`<div>`s.
+
+|                          | NodX                                                   | Template engine                    | JS framework                                          |
+| ------------------------ | ------------------------------------------------------ | ---------------------------------- | ----------------------------------------------------- |
+| HTML is written with     | native functions (`Div()`, `Class()`)                  | template files with `{{ }}` syntax | JSX / JavaScript                                      |
+| Type safety              | full - the compiler validates every tag and attribute  | none - typos are runtime surprises | partial - JSX, but still JavaScript                   |
+| New syntax to learn      | none                                                   | a mini template language           | JSX plus framework concepts (state, hooks, lifecycle) |
+| Runtime and dependencies | zero - pure functions                                  | a template parser                  | virtual DOM, hydration, bundles, build step           |
+| Rendering happens        | on the server, in your language                        | on the server                      | in the browser (SSR exists, but adds machinery)       |
+| Interactivity            | none - HTML only, you wire the JS yourself             | none                               | first-class - state, events, effects                  |
+| Best for                 | server-rendered HTML, simple UIs, static sites, emails | classic server-rendered pages      | rich, interactive client-side applications            |
+
+### The gap NodX fills
+
+A huge share of web development is not interactive apps, it is producing HTML on
+the server: pages, dashboards, emails, reports, static sites. For that job,
+template engines are unsafe and frameworks are overkill. NodX targets exactly
+that middle ground: the type safety of a framework and the simplicity of a
+template engine, with zero runtime and 100% of its focus on HTML.
+
+If your backend is already Go, Python, Rust or any other language, NodX lets you
+generate HTML in that language - no second language, no build step, no runtime
+in the browser.
+
+### When NodX is not the answer
+
+Be honest about the trade-offs:
+
+- **Interactive apps.** Live updates, complex client state, real-time
+  collaboration, use a JavaScript framework. NodX is not a React killer; it
+  competes with the idea that you need React to write HTML.
+- **HTML files maintained by non-programmers.** If designers edit the markup
+  directly, a template engine with HTML-looking files may serve you better.
+- **Legacy codebases.** If a template engine is already working for you,
+  migrating is a decision, not a requirement.
+
 ## Core concepts
 
 ### Everything is a node
@@ -123,7 +173,7 @@ Which produces:
 
 ```html
 <div class="avatar-container">
-   <img class="avatar-image" alt="Avatar" src="avatar.png" />
+  <img class="avatar-image" alt="Avatar" src="avatar.png" />
 </div>
 ```
 

@@ -79,7 +79,7 @@ like writing code again.
 | Go       | [nodxgo](https://github.com/varavelio/nodxgo) |
 
 Your language missing? Build one from the spec and open a PR to add it to the
-list!
+list (NodX is quite simple, you'll enjoy building it)!
 
 ## License
 

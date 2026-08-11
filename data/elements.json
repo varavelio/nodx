@@ -10,6 +10,11 @@
     "description": "Defines an abbreviation or acronym."
   },
   {
+    "name": "acronym",
+    "isVoid": false,
+    "description": "Defines an acronym (deprecated)."
+  },
+  {
     "name": "address",
     "isVoid": false,
     "description": "Defines contact information for the author/owner of a document."
@@ -51,7 +56,7 @@
   },
   {
     "name": "basefont",
-    "isVoid": false,
+    "isVoid": true,
     "description": "Specifies a default color, size, and font for all text in a document (deprecated)."
   },
   {
@@ -63,6 +68,21 @@
     "name": "bdo",
     "isVoid": false,
     "description": "Overrides the current text direction."
+  },
+  {
+    "name": "bgsound",
+    "isVoid": true,
+    "description": "Sets the background sound of the document (deprecated)."
+  },
+  {
+    "name": "big",
+    "isVoid": false,
+    "description": "Defines big text (deprecated)."
+  },
+  {
+    "name": "blink",
+    "isVoid": false,
+    "description": "Defines text that blinks (deprecated, non-standard)."
   },
   {
     "name": "blockquote",
@@ -120,6 +140,16 @@
     "description": "Specifies a group of one or more columns in a table for formatting."
   },
   {
+    "name": "command",
+    "isVoid": true,
+    "description": "Defines a command the user can invoke (deprecated)."
+  },
+  {
+    "name": "content",
+    "isVoid": false,
+    "description": "Defines an insertion point in a shadow DOM (deprecated)."
+  },
+  {
     "name": "data",
     "isVoid": false,
     "description": "Links the given content with a machine-readable translation."
@@ -173,6 +203,11 @@
     "name": "dt",
     "isVoid": false,
     "description": "Defines a term/name in a description list."
+  },
+  {
+    "name": "element",
+    "isVoid": false,
+    "description": "Defines a custom element (deprecated)."
   },
   {
     "name": "em",
@@ -265,6 +300,11 @@
     "description": "Defines a header for a document or section."
   },
   {
+    "name": "hgroup",
+    "isVoid": false,
+    "description": "Groups a set of headings."
+  },
+  {
     "name": "hr",
     "isVoid": true,
     "description": "Defines a thematic change in the content."
@@ -285,6 +325,11 @@
     "description": "Defines an inline frame."
   },
   {
+    "name": "image",
+    "isVoid": true,
+    "description": "Defines an image (obsolete, use img instead)."
+  },
+  {
     "name": "img",
     "isVoid": true,
     "description": "Defines an image."
@@ -303,6 +348,11 @@
     "name": "kbd",
     "isVoid": false,
     "description": "Defines keyboard input."
+  },
+  {
+    "name": "keygen",
+    "isVoid": true,
+    "description": "Generates a key-pair for form submission (deprecated)."
   },
   {
     "name": "label",
@@ -340,6 +390,21 @@
     "description": "Defines marked or highlighted text."
   },
   {
+    "name": "marquee",
+    "isVoid": false,
+    "description": "Defines scrolling text (deprecated)."
+  },
+  {
+    "name": "menu",
+    "isVoid": false,
+    "description": "Defines an unordered list of commands or menu items."
+  },
+  {
+    "name": "menuitem",
+    "isVoid": true,
+    "description": "Defines a command a user can invoke from a popup menu (deprecated)."
+  },
+  {
     "name": "meta",
     "isVoid": true,
     "description": "Defines metadata about an HTML document."
@@ -350,9 +415,29 @@
     "description": "Defines a scalar measurement within a known range."
   },
   {
+    "name": "multicol",
+    "isVoid": false,
+    "description": "Defines a multi-column layout (obsolete)."
+  },
+  {
     "name": "nav",
     "isVoid": false,
     "description": "Defines navigation links."
+  },
+  {
+    "name": "nextid",
+    "isVoid": true,
+    "description": "Defines a unique id for the document (obsolete)."
+  },
+  {
+    "name": "nobr",
+    "isVoid": false,
+    "description": "Defines text that should not wrap (deprecated)."
+  },
+  {
+    "name": "noembed",
+    "isVoid": false,
+    "description": "Provides alternate content for browsers without embed support (deprecated)."
   },
   {
     "name": "noframes",
@@ -403,6 +488,16 @@
     "name": "picture",
     "isVoid": false,
     "description": "Defines a container for multiple image resources."
+  },
+  {
+    "name": "plaintext",
+    "isVoid": false,
+    "description": "Renders everything that follows as plain text (obsolete)."
+  },
+  {
+    "name": "portal",
+    "isVoid": false,
+    "description": "Embeds another HTML page into the current one (experimental)."
   },
   {
     "name": "pre",
@@ -460,6 +555,11 @@
     "description": "Defines a client-side script."
   },
   {
+    "name": "search",
+    "isVoid": false,
+    "description": "Represents a set of form controls for searching."
+  },
+  {
     "name": "section",
     "isVoid": false,
     "description": "Defines a section in a document."
@@ -468,6 +568,11 @@
     "name": "select",
     "isVoid": false,
     "description": "Defines a drop-down list."
+  },
+  {
+    "name": "shadow",
+    "isVoid": false,
+    "description": "Defines a shadow DOM insertion point (deprecated)."
   },
   {
     "name": "slot",
@@ -483,6 +588,11 @@
     "name": "source",
     "isVoid": true,
     "description": "Defines multiple media resources for media elements."
+  },
+  {
+    "name": "spacer",
+    "isVoid": false,
+    "description": "Inserts white space (obsolete)."
   },
   {
     "name": "span",
@@ -613,5 +723,10 @@
     "name": "wbr",
     "isVoid": true,
     "description": "Defines a possible line-break."
+  },
+  {
+    "name": "xmp",
+    "isVoid": false,
+    "description": "Renders text between tags as-is (obsolete)."
   }
 ]

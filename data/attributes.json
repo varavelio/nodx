@@ -1,5 +1,9 @@
 [
   {
+    "name": "abbr",
+    "description": "Specifies an abbreviated version of the content in a header cell."
+  },
+  {
     "name": "accept",
     "description": "Specifies the types of files that the server accepts (only for input type='file')."
   },
@@ -24,8 +28,24 @@
     "description": "Specifies a feature policy for the iframe."
   },
   {
+    "name": "allowfullscreen",
+    "description": "Specifies that an iframe can be displayed in fullscreen mode."
+  },
+  {
     "name": "alt",
     "description": "Provides alternative text for an image if it cannot be displayed."
+  },
+  {
+    "name": "archive",
+    "description": "Specifies a space-separated list of archives for an object (deprecated)."
+  },
+  {
+    "name": "aria-*",
+    "description": "Defines accessibility semantics or ARIA properties."
+  },
+  {
+    "name": "as",
+    "description": "Specifies the type of content being preloaded (for link rel='preload')."
   },
   {
     "name": "async",
@@ -40,6 +60,10 @@
     "description": "Specifies whether an input field should have autocomplete enabled."
   },
   {
+    "name": "autocorrect",
+    "description": "Controls whether automatic spelling correction is enabled for a form field."
+  },
+  {
     "name": "autofocus",
     "description": "Specifies that an input field should automatically get focus when the page loads."
   },
@@ -48,12 +72,24 @@
     "description": "Specifies that the audio/video should start playing as soon as it is ready."
   },
   {
+    "name": "autosave",
+    "description": "Specifies that an input should be pre-filled with previous values (deprecated)."
+  },
+  {
+    "name": "axis",
+    "description": "Specifies a category name for a table cell (deprecated)."
+  },
+  {
     "name": "background",
     "description": "Specifies a background image for the element."
   },
   {
     "name": "bgcolor",
     "description": "Specifies the background color of an element."
+  },
+  {
+    "name": "blocking",
+    "description": "Specifies that a script or stylesheet blocks rendering while loading."
   },
   {
     "name": "border",
@@ -68,8 +104,24 @@
     "description": "Specifies that the camera should be used for input."
   },
   {
+    "name": "cellpadding",
+    "description": "Specifies the space between cell walls and cell content (deprecated)."
+  },
+  {
+    "name": "cellspacing",
+    "description": "Specifies the space between cells (deprecated)."
+  },
+  {
     "name": "challenge",
     "description": "Specifies that the value of the keygen element should be challenged when submitted."
+  },
+  {
+    "name": "char",
+    "description": "Aligns table content relative to a character (deprecated)."
+  },
+  {
+    "name": "charoff",
+    "description": "Specifies the offset for the char attribute (deprecated)."
   },
   {
     "name": "charset",
@@ -88,12 +140,24 @@
     "description": "Specifies one or more class names for an element."
   },
   {
+    "name": "classid",
+    "description": "Specifies the class id of an object (deprecated)."
+  },
+  {
+    "name": "clear",
+    "description": "Specifies where the next line should appear after a line break (deprecated)."
+  },
+  {
     "name": "code",
     "description": "Specifies the URL of the applet's class file to be loaded and executed."
   },
   {
     "name": "codebase",
     "description": "Specifies the base URL for an applet."
+  },
+  {
+    "name": "codetype",
+    "description": "Specifies the MIME type of the code of an object (deprecated)."
   },
   {
     "name": "color",
@@ -106,6 +170,10 @@
   {
     "name": "colspan",
     "description": "Specifies the number of columns a cell should span."
+  },
+  {
+    "name": "compact",
+    "description": "Specifies that a list should be rendered more compactly (deprecated)."
   },
   {
     "name": "content",
@@ -140,8 +208,16 @@
     "description": "Specifies the URL of the resource to be used by the object."
   },
   {
+    "name": "data-*",
+    "description": "Used to store custom data private to the page or application."
+  },
+  {
     "name": "datetime",
     "description": "Specifies the date and time."
+  },
+  {
+    "name": "declare",
+    "description": "Declares an object without instantiating it (deprecated)."
   },
   {
     "name": "decoding",
@@ -184,6 +260,22 @@
     "description": "Specifies what action label to present for the enter key on virtual keyboards."
   },
   {
+    "name": "event",
+    "description": "Specifies the event a script is triggered by (deprecated)."
+  },
+  {
+    "name": "exportparts",
+    "description": "Exports shadow DOM parts of an element to its host page."
+  },
+  {
+    "name": "face",
+    "description": "Specifies the font family of the text (deprecated)."
+  },
+  {
+    "name": "fetchpriority",
+    "description": "Hints the priority for fetching a resource."
+  },
+  {
     "name": "for",
     "description": "Specifies which form element a label or output element is bound to."
   },
@@ -212,6 +304,14 @@
     "description": "Specifies where to display the response after submitting the form."
   },
   {
+    "name": "frame",
+    "description": "Specifies which parts of the table border should be visible (deprecated)."
+  },
+  {
+    "name": "frameborder",
+    "description": "Specifies whether to display a border around an iframe (deprecated)."
+  },
+  {
     "name": "headers",
     "description": "Specifies one or more header cells a cell is related to."
   },
@@ -236,6 +336,10 @@
     "description": "Specifies the language of the linked document."
   },
   {
+    "name": "hspace",
+    "description": "Specifies the horizontal space around an element (deprecated)."
+  },
+  {
     "name": "http-equiv",
     "description": "Provides an HTTP header for the information/value of the content attribute."
   },
@@ -248,8 +352,24 @@
     "description": "Specifies a unique id for an element."
   },
   {
+    "name": "imagesizes",
+    "description": "Specifies image sizes for preloaded images (link rel='preload')."
+  },
+  {
+    "name": "imagesrcset",
+    "description": "Specifies image candidates for preloaded images (link rel='preload')."
+  },
+  {
     "name": "importance",
     "description": "Indicates the relative fetch priority for the resource."
+  },
+  {
+    "name": "inert",
+    "description": "Makes an element and its children unresponsive to user input."
+  },
+  {
+    "name": "inputmode",
+    "description": "Hints the type of virtual keyboard to use for a form field."
   },
   {
     "name": "integrity",
@@ -260,8 +380,24 @@
     "description": "Specifies an image as a server-side image-map."
   },
   {
+    "name": "itemid",
+    "description": "Specifies a global identifier for a microdata item."
+  },
+  {
     "name": "itemprop",
     "description": "Defines a property of an item."
+  },
+  {
+    "name": "itemref",
+    "description": "References additional elements that provide properties for a microdata item."
+  },
+  {
+    "name": "itemscope",
+    "description": "Creates a microdata item."
+  },
+  {
+    "name": "itemtype",
+    "description": "Specifies the vocabulary used by a microdata item."
   },
   {
     "name": "keytype",
@@ -284,12 +420,16 @@
     "description": "Deprecated. Specifies the scripting language used for the script."
   },
   {
+    "name": "list",
+    "description": "Refers to a datalist element that contains pre-defined options."
+  },
+  {
     "name": "loading",
     "description": "Indicates how the browser should load the image or iframe."
   },
   {
-    "name": "list",
-    "description": "Refers to a datalist element that contains pre-defined options."
+    "name": "longdesc",
+    "description": "Specifies a URL with a detailed description of an image (deprecated)."
   },
   {
     "name": "loop",
@@ -302,6 +442,14 @@
   {
     "name": "manifest",
     "description": "Specifies the URL of the document's cache manifest."
+  },
+  {
+    "name": "marginheight",
+    "description": "Specifies the top and bottom margins of an iframe (deprecated)."
+  },
+  {
+    "name": "marginwidth",
+    "description": "Specifies the left and right margins of an iframe (deprecated)."
   },
   {
     "name": "max",
@@ -340,6 +488,10 @@
     "description": "Specifies the name of the element."
   },
   {
+    "name": "nohref",
+    "description": "Specifies that an area has no associated link (deprecated)."
+  },
+  {
     "name": "nomodule",
     "description": "Indicates that the script should not be executed in browsers that support module scripts."
   },
@@ -348,8 +500,376 @@
     "description": "A cryptographic nonce used in Content Security Policy."
   },
   {
+    "name": "noresize",
+    "description": "Specifies that a frame cannot be resized (deprecated)."
+  },
+  {
+    "name": "noshade",
+    "description": "Specifies that a horizontal rule has no shading (deprecated)."
+  },
+  {
     "name": "novalidate",
     "description": "Specifies that the form should not be validated when submitted."
+  },
+  {
+    "name": "nowrap",
+    "description": "Specifies that content should not wrap (deprecated)."
+  },
+  {
+    "name": "onabort",
+    "description": "Fires when the loading of a resource is aborted."
+  },
+  {
+    "name": "onanimationcancel",
+    "description": "Fires when a CSS animation is unexpectedly interrupted."
+  },
+  {
+    "name": "onanimationend",
+    "description": "Fires when a CSS animation finishes."
+  },
+  {
+    "name": "onanimationiteration",
+    "description": "Fires when a CSS animation repeats."
+  },
+  {
+    "name": "onanimationstart",
+    "description": "Fires when a CSS animation starts."
+  },
+  {
+    "name": "onauxclick",
+    "description": "Fires when a non-primary mouse button is clicked."
+  },
+  {
+    "name": "onbeforeinput",
+    "description": "Fires when an input event is about to fire."
+  },
+  {
+    "name": "onbeforematch",
+    "description": "Fires when a hidden section is matched by the find-in-page feature."
+  },
+  {
+    "name": "onbeforetoggle",
+    "description": "Fires when a popover or details element is about to toggle."
+  },
+  {
+    "name": "onblur",
+    "description": "Fires when an element loses focus."
+  },
+  {
+    "name": "oncancel",
+    "description": "Fires when the user cancels a dialog."
+  },
+  {
+    "name": "oncanplay",
+    "description": "Fires when the media can start playing."
+  },
+  {
+    "name": "oncanplaythrough",
+    "description": "Fires when the media can play through without buffering."
+  },
+  {
+    "name": "onchange",
+    "description": "Fires when the value of a form element changes."
+  },
+  {
+    "name": "onclick",
+    "description": "Fires when the user clicks an element."
+  },
+  {
+    "name": "onclose",
+    "description": "Fires when a dialog is closed."
+  },
+  {
+    "name": "oncontextlost",
+    "description": "Fires when a context menu cannot open."
+  },
+  {
+    "name": "oncontextmenu",
+    "description": "Fires when the user opens a context menu."
+  },
+  {
+    "name": "oncontextrestored",
+    "description": "Fires when a context menu is restored."
+  },
+  {
+    "name": "oncopy",
+    "description": "Fires when the user copies content."
+  },
+  {
+    "name": "oncuechange",
+    "description": "Fires when the current cue of a text track changes."
+  },
+  {
+    "name": "oncut",
+    "description": "Fires when the user cuts content."
+  },
+  {
+    "name": "ondblclick",
+    "description": "Fires when the user double-clicks an element."
+  },
+  {
+    "name": "ondrag",
+    "description": "Fires when an element is being dragged."
+  },
+  {
+    "name": "ondragend",
+    "description": "Fires when a drag operation ends."
+  },
+  {
+    "name": "ondragenter",
+    "description": "Fires when a dragged element enters a drop target."
+  },
+  {
+    "name": "ondragleave",
+    "description": "Fires when a dragged element leaves a drop target."
+  },
+  {
+    "name": "ondragover",
+    "description": "Fires when a dragged element is over a drop target."
+  },
+  {
+    "name": "ondragstart",
+    "description": "Fires when a drag operation starts."
+  },
+  {
+    "name": "ondrop",
+    "description": "Fires when a dragged element is dropped."
+  },
+  {
+    "name": "ondurationchange",
+    "description": "Fires when the duration of the media changes."
+  },
+  {
+    "name": "onemptied",
+    "description": "Fires when the media becomes empty."
+  },
+  {
+    "name": "onended",
+    "description": "Fires when the media reaches the end."
+  },
+  {
+    "name": "onerror",
+    "description": "Fires when a resource fails to load."
+  },
+  {
+    "name": "onfocus",
+    "description": "Fires when an element gains focus."
+  },
+  {
+    "name": "onformdata",
+    "description": "Fires when the form data set is built."
+  },
+  {
+    "name": "ongotpointercapture",
+    "description": "Fires when a pointer is captured."
+  },
+  {
+    "name": "oninput",
+    "description": "Fires when the value of an input element changes."
+  },
+  {
+    "name": "oninvalid",
+    "description": "Fires when a form element fails validation."
+  },
+  {
+    "name": "onkeydown",
+    "description": "Fires when a key is pressed down."
+  },
+  {
+    "name": "onkeypress",
+    "description": "Fires when a key is pressed (deprecated)."
+  },
+  {
+    "name": "onkeyup",
+    "description": "Fires when a key is released."
+  },
+  {
+    "name": "onload",
+    "description": "Fires when a resource finishes loading."
+  },
+  {
+    "name": "onloadeddata",
+    "description": "Fires when the first frame of the media is loaded."
+  },
+  {
+    "name": "onloadedmetadata",
+    "description": "Fires when the metadata of the media is loaded."
+  },
+  {
+    "name": "onloadstart",
+    "description": "Fires when the loading of a resource starts."
+  },
+  {
+    "name": "onlostpointercapture",
+    "description": "Fires when pointer capture is released."
+  },
+  {
+    "name": "onmousedown",
+    "description": "Fires when a mouse button is pressed down."
+  },
+  {
+    "name": "onmouseenter",
+    "description": "Fires when the pointer enters an element."
+  },
+  {
+    "name": "onmouseleave",
+    "description": "Fires when the pointer leaves an element."
+  },
+  {
+    "name": "onmousemove",
+    "description": "Fires when the pointer moves over an element."
+  },
+  {
+    "name": "onmouseout",
+    "description": "Fires when the pointer leaves an element or one of its children."
+  },
+  {
+    "name": "onmouseover",
+    "description": "Fires when the pointer moves onto an element."
+  },
+  {
+    "name": "onmouseup",
+    "description": "Fires when a mouse button is released."
+  },
+  {
+    "name": "onpaste",
+    "description": "Fires when the user pastes content."
+  },
+  {
+    "name": "onpause",
+    "description": "Fires when the media is paused."
+  },
+  {
+    "name": "onplay",
+    "description": "Fires when the media starts playing."
+  },
+  {
+    "name": "onplaying",
+    "description": "Fires when the media is playing."
+  },
+  {
+    "name": "onpointercancel",
+    "description": "Fires when a pointer event is cancelled."
+  },
+  {
+    "name": "onpointerdown",
+    "description": "Fires when a pointer is pressed down."
+  },
+  {
+    "name": "onpointerenter",
+    "description": "Fires when the pointer enters the hit test area."
+  },
+  {
+    "name": "onpointerleave",
+    "description": "Fires when the pointer leaves the hit test area."
+  },
+  {
+    "name": "onpointermove",
+    "description": "Fires when the pointer moves."
+  },
+  {
+    "name": "onpointerout",
+    "description": "Fires when the pointer leaves the hit test boundaries."
+  },
+  {
+    "name": "onpointerover",
+    "description": "Fires when the pointer moves onto the hit test area."
+  },
+  {
+    "name": "onpointerup",
+    "description": "Fires when the pointer is released."
+  },
+  {
+    "name": "onprogress",
+    "description": "Fires while the media is loading."
+  },
+  {
+    "name": "onratechange",
+    "description": "Fires when the playback rate changes."
+  },
+  {
+    "name": "onreset",
+    "description": "Fires when a form is reset."
+  },
+  {
+    "name": "onresize",
+    "description": "Fires when the document view is resized."
+  },
+  {
+    "name": "onscroll",
+    "description": "Fires when the document or an element is scrolled."
+  },
+  {
+    "name": "onscrollend",
+    "description": "Fires when scrolling ends."
+  },
+  {
+    "name": "onsecuritypolicyviolation",
+    "description": "Fires when a Content Security Policy is violated."
+  },
+  {
+    "name": "onseeked",
+    "description": "Fires when a seek operation finishes."
+  },
+  {
+    "name": "onseeking",
+    "description": "Fires when a seek operation starts."
+  },
+  {
+    "name": "onselect",
+    "description": "Fires when text is selected."
+  },
+  {
+    "name": "onslotchange",
+    "description": "Fires when the assigned nodes of a slot change."
+  },
+  {
+    "name": "onstalled",
+    "description": "Fires when the media is stalled."
+  },
+  {
+    "name": "onsubmit",
+    "description": "Fires when a form is submitted."
+  },
+  {
+    "name": "onsuspend",
+    "description": "Fires when the media is suspended."
+  },
+  {
+    "name": "ontimeupdate",
+    "description": "Fires when the playback position changes."
+  },
+  {
+    "name": "ontoggle",
+    "description": "Fires when a details or popover element toggles."
+  },
+  {
+    "name": "ontransitioncancel",
+    "description": "Fires when a CSS transition is cancelled."
+  },
+  {
+    "name": "ontransitionend",
+    "description": "Fires when a CSS transition finishes."
+  },
+  {
+    "name": "ontransitionrun",
+    "description": "Fires when a CSS transition starts running."
+  },
+  {
+    "name": "ontransitionstart",
+    "description": "Fires when a CSS transition starts."
+  },
+  {
+    "name": "onvolumechange",
+    "description": "Fires when the media volume changes."
+  },
+  {
+    "name": "onwaiting",
+    "description": "Fires when the media is waiting for data."
+  },
+  {
+    "name": "onwheel",
+    "description": "Fires when the mouse wheel is rotated."
   },
   {
     "name": "open",
@@ -358,6 +878,10 @@
   {
     "name": "optimum",
     "description": "Specifies the optimal value of the gauge."
+  },
+  {
+    "name": "part",
+    "description": "Identifies the element as a part of a shadow DOM."
   },
   {
     "name": "pattern",
@@ -376,12 +900,28 @@
     "description": "Indicates that the video should play inline on mobile devices."
   },
   {
+    "name": "popover",
+    "description": "Marks an element as a popover."
+  },
+  {
+    "name": "popovertarget",
+    "description": "Specifies the id of the popover element to toggle."
+  },
+  {
+    "name": "popovertargetaction",
+    "description": "Specifies the action to perform on the popover target."
+  },
+  {
     "name": "poster",
     "description": "Specifies an image to be shown while the video is downloading or until the user hits the play button."
   },
   {
     "name": "preload",
     "description": "Specifies if and how the author thinks the audio/video should be loaded when the page loads."
+  },
+  {
+    "name": "radiogroup",
+    "description": "Specifies the group of radio buttons a command belongs to (deprecated)."
   },
   {
     "name": "readonly",
@@ -400,8 +940,16 @@
     "description": "Specifies that the input field must be filled out before submitting the form."
   },
   {
+    "name": "results",
+    "description": "Specifies the maximum number of results to show in a search input (deprecated)."
+  },
+  {
     "name": "reversed",
     "description": "Specifies that the list order should be descending (9,8,7...)."
+  },
+  {
+    "name": "role",
+    "description": "Defines the role of an element for accessibility purposes."
   },
   {
     "name": "rows",
@@ -410,6 +958,10 @@
   {
     "name": "rowspan",
     "description": "Specifies the number of rows a cell should span."
+  },
+  {
+    "name": "rules",
+    "description": "Specifies which rules to display between table cells (deprecated)."
   },
   {
     "name": "sandbox",
@@ -422,6 +974,10 @@
   {
     "name": "scoped",
     "description": "Specifies that the styles only apply to this element's parent and child elements."
+  },
+  {
+    "name": "scrolling",
+    "description": "Specifies whether to display scrollbars in an iframe (deprecated)."
   },
   {
     "name": "selected",
@@ -468,6 +1024,10 @@
     "description": "Specifies the URL of the image to use in different situations."
   },
   {
+    "name": "standby",
+    "description": "Specifies a message to show while an object loads (deprecated)."
+  },
+  {
     "name": "start",
     "description": "Specifies the start value of an ordered list."
   },
@@ -508,8 +1068,20 @@
     "description": "Specifies an image as a client-side image-map."
   },
   {
+    "name": "valign",
+    "description": "Specifies the vertical alignment of the content (deprecated)."
+  },
+  {
     "name": "value",
     "description": "Specifies the value of the element."
+  },
+  {
+    "name": "valuetype",
+    "description": "Specifies the type of the value of a param element (deprecated)."
+  },
+  {
+    "name": "vspace",
+    "description": "Specifies the vertical space around an element (deprecated)."
   },
   {
     "name": "width",
@@ -518,17 +1090,5 @@
   {
     "name": "wrap",
     "description": "Specifies how the text in a text area is to be wrapped when submitted in a form."
-  },
-  {
-    "name": "aria-*",
-    "description": "Defines accessibility semantics or ARIA properties."
-  },
-  {
-    "name": "data-*",
-    "description": "Used to store custom data private to the page or application."
-  },
-  {
-    "name": "role",
-    "description": "Defines the role of an element for accessibility purposes."
   }
 ]

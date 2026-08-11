@@ -1,13 +1,15 @@
 # Data
 
-Here are stored the static data used by the project.
+Here are stored the static data used by the project implementations.
+
+This data is useful if you are creating a NodX implementation and want to use
+code generation to avoid repeating the boilerplate, as you can create some small
+primitives and write a script that, based on the data in this folder, generates
+the rest of your implementation programmatically.
 
 ## [elements.json](elements.json)
 
 This file contains the list of HTML elements included in the project.
-
-Useful for code generation of the NodX template engine across multiple
-languages.
 
 ### Shape
 
@@ -28,9 +30,6 @@ languages.
 
 This file contains the list of HTML attributes included in the project.
 
-Useful for code generation of the NodX template engine across multiple
-languages.
-
 ### Shape
 
 ```json
@@ -47,10 +46,7 @@ languages.
 
 ## [keywords.json](keywords.json)
 
-This file contains the list of keywords marked as conflictive in the project.
-
-Useful to determine conflicting keywords when generating code for the NodX
-template engine across multiple languages.
+This file contains the list of keywords marked as conflictive in the project
 
 ### Shape
 

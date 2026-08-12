@@ -135,6 +135,16 @@ The reference data (`./data/attributes.json`) marks every attribute with an
 `isBoolean` flag (`true` for the ones HTML defines as boolean) so
 implementations can rely on that flag instead of maintaining their own list.
 
+**List attributes** (like `class`, `rel`, `sandbox`) are the other special case.
+According to the HTML specification, they accept multiple space-separated string
+values (e.g. `class="card rounded"`). The reference data marks them with an
+`isList` flag (`true` for the ones HTML defines as a space-separated list of
+values, `false` for the rest). Code generators can use this flag to generate
+friendlier function signatures for the end user: instead of forcing a single
+pre-joined string (`Class("card rounded big")`), they can accept a variable
+number of arguments and join them with a single space
+(`Class("card", "rounded big")`).
+
 ### Text
 
 Text nodes hold content and are **always escaped by default**. If you ever need
@@ -214,6 +224,11 @@ Implementations are free to add conveniences on top (conditional rendering,
 class maps, loops, you name it) as long as these rules hold and the
 implementation is simple enough.
 
+Attributes marked `isList` are a great candidate for one of those conveniences:
+a variadic signature (e.g. `Class("card", "rounded big")`) that joins the
+arguments with a single space is usually friendlier than asking users to build
+the space-separated string themselves.
+
 ## Reference data
 
 This repository ships three JSON files that are the source of truth for code
@@ -221,11 +236,11 @@ generators (useful to generate the implementation's boilerplate). If you are
 implementing NodX, build your language bindings from these files; do not invent
 your own lists.
 
-| File                   | Contents                                                                                           |
-| ---------------------- | -------------------------------------------------------------------------------------------------- |
-| `data/elements.json`   | Every HTML element, with its `isVoid` flag and a short description.                                |
-| `data/attributes.json` | Every HTML attribute (including event handlers), with a short description and an `isBoolean` flag. |
-| `data/keywords.json`   | Reserved words per language, to detect naming collisions during code generation.                   |
+| File                   | Contents                                                                                                             |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| `data/elements.json`   | Every HTML element, with its `isVoid` flag and a short description.                                                  |
+| `data/attributes.json` | Every HTML attribute (including event handlers), with a short description, an `isBoolean` flag and an `isList` flag. |
+| `data/keywords.json`   | Reserved words per language, to detect naming collisions during code generation.                                     |
 
 > Note: If you notice any inconsistencies, missing or extra data in these files,
 > an issue or pull request would be greatly appreciated to help keep the

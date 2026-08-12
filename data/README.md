@@ -37,6 +37,7 @@ This file contains the list of HTML attributes included in the project.
   {
     "name": "attribute",
     "isBoolean": false,
+    "isList": false,
     "description": "Description of the attribute"
   },
   {
@@ -50,6 +51,12 @@ attributes that the HTML standard defines as boolean attributes: they take no
 value and simply appear or disappear, so they render as just the attribute name
 (or are omitted entirely). Attributes that look boolean but accept a value or
 keyword (e.g. `hidden`, `download`, `capture`, `popover`) carry `false` as well.
+
+The `isList` field is present on every attribute and is `true` only for the
+attributes that, according to the HTML standard, accept multiple space-separated
+string values (e.g. `class`, `rel`, `sandbox`). Code generators can use it to
+generate friendlier signatures, like variadic functions that join their
+arguments with a single space (`Class("card card-lg", "rounded")`).
 
 ## [keywords.json](keywords.json)
 

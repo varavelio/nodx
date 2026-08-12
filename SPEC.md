@@ -141,9 +141,9 @@ values (e.g. `class="card rounded"`). The reference data marks them with an
 `isList` flag (`true` for the ones HTML defines as a space-separated list of
 values, `false` for the rest). Code generators can use this flag to generate
 friendlier function signatures for the end user: instead of forcing a single
-pre-joined string (`Class("card rounded big")`), they can accept a variable
+pre-joined string (`Class("card card-lg rounded")`), they can accept a variable
 number of arguments and join them with a single space
-(`Class("card", "rounded big")`).
+(`Class("card card-lg", "rounded")`).
 
 ### Text
 
@@ -225,7 +225,7 @@ class maps, loops, you name it) as long as these rules hold and the
 implementation is simple enough.
 
 Attributes marked `isList` are a great candidate for one of those conveniences:
-a variadic signature (e.g. `Class("card", "rounded big")`) that joins the
+a variadic signature (e.g. `Class("card card-lg", "rounded")`) that joins the
 arguments with a single space is usually friendlier than asking users to build
 the space-separated string themselves.
 

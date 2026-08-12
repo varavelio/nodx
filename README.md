@@ -81,6 +81,26 @@ like writing code again.
 Your language missing? Build one from the [specification](./SPEC.md) and open a
 PR to add it to the list, NodX is quite simple, you'll enjoy building it!
 
+## Ecosystem
+
+Each implementation can grow its own ecosystem of ready-to-use libraries. Here
+are the projects built on top of each one:
+
+### Go
+
+- [**nodxgo-alpine**](https://github.com/varavelio/nodxgo-alpine) — Alpine.js
+  attributes for NodX Go.
+- [**nodxgo-htmx**](https://github.com/varavelio/nodxgo-htmx) — HTMX attributes
+  and server utilities for NodX Go.
+- [**nodxgo-lucide**](https://github.com/varavelio/nodxgo-lucide) — Beautiful &
+  consistent icons for NodX Go, provided by [Lucide](https://lucide.dev/).
+- [**nodxgo-simpleicons**](https://github.com/varavelio/nodxgo-simpleicons) —
+  The [Simple Icons](https://simpleicons.org/) brand icons set for NodX Go.
+
+> **Building your own NodX library?** We'd love to feature it here! Open a pull
+> request adding your project under your language and help grow the NodX
+> ecosystem together.
+
 ## License
 
 MIT. See [LICENSE](LICENSE) for details.

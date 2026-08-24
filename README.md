@@ -74,9 +74,10 @@ like writing code again.
 
 ## Implementations
 
-| Language | Implementation                                |
-| -------- | --------------------------------------------- |
-| Go       | [nodxgo](https://github.com/varavelio/nodxgo) |
+| Language   | Implementation                                |
+| ---------- | --------------------------------------------- |
+| Go         | [nodxgo](https://github.com/varavelio/nodxgo) |
+| TypeScript | [nodxts](https://github.com/varavelio/nodxts) |
 
 Your language missing? Build one from the [specification](./SPEC.md) and open a
 PR to add it to the list, NodX is quite simple, you'll enjoy building it!
@@ -88,14 +89,27 @@ are the projects built on top of each one:
 
 ### Go
 
-- [**nodxgo-alpine**](https://github.com/varavelio/nodxgo-alpine) — Alpine.js
+- [**nodxgo-alpine**](https://github.com/varavelio/nodxgo-alpine) - Alpine.js
   attributes for NodX Go.
-- [**nodxgo-htmx**](https://github.com/varavelio/nodxgo-htmx) — HTMX attributes
+- [**nodxgo-htmx**](https://github.com/varavelio/nodxgo-htmx) - HTMX attributes
   and server utilities for NodX Go.
-- [**nodxgo-lucide**](https://github.com/varavelio/nodxgo-lucide) — Beautiful &
+- [**nodxgo-lucide**](https://github.com/varavelio/nodxgo-lucide) - Beautiful &
   consistent icons for NodX Go, provided by [Lucide](https://lucide.dev/).
-- [**nodxgo-simpleicons**](https://github.com/varavelio/nodxgo-simpleicons) —
+- [**nodxgo-simpleicons**](https://github.com/varavelio/nodxgo-simpleicons) -
   The [Simple Icons](https://simpleicons.org/) brand icons set for NodX Go.
+
+### TypeScript
+
+- [**nodxts-alpine**](https://github.com/varavelio/nodxts-alpine) - Alpine.js
+  attributes for NodX TypeScript.
+- [**nodxts-htmx**](https://github.com/varavelio/nodxts-htmx) - HTMX attributes
+  for NodX TypeScript.
+- [**nodxts-lucide**](https://github.com/varavelio/nodxts-lucide) - Beautiful &
+  consistent icons for NodX TypeScript, provided by
+  [Lucide](https://lucide.dev/).
+- [**nodxts-simpleicons**](https://github.com/varavelio/nodxts-simpleicons) -
+  The [Simple Icons](https://simpleicons.org/) brand icons set for NodX
+  TypeScript.
 
 > **Building your own NodX library?** We'd love to feature it here! Open a pull
 > request adding your project under your language and help grow the NodX
